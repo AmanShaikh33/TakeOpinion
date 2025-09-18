@@ -42,7 +42,9 @@ const TakeOpinionFixed = () => {
                 />
                 <div className="p-4">
                   <h3 className="font-semibold">Hospital {i}</h3>
-                  <p className="text-sm text-gray-500">World-class care & service.</p>
+                  <p className="text-sm text-gray-500">
+                    World-class care & service.
+                  </p>
                 </div>
               </div>
             ))}
@@ -81,7 +83,11 @@ const TakeOpinionFixed = () => {
                 key={i}
                 className="min-w-[180px] bg-white shadow-md rounded-lg overflow-hidden flex-shrink-0"
               >
-                <img src={item.img} alt={item.name} className="w-full h-24 object-cover" />
+                <img
+                  src={item.img}
+                  alt={item.name}
+                  className="w-full h-24 object-cover"
+                />
                 <div className="p-3">
                   <h3 className="font-semibold text-sm">{item.name}</h3>
                   <p className="text-xs text-gray-500">Short description</p>
@@ -104,22 +110,28 @@ const TakeOpinionFixed = () => {
         <div className="px-6 py-4">
           <h2 className="text-lg font-bold mb-4">Testimonials</h2>
           <div className="flex space-x-6 overflow-x-auto no-scrollbar">
-            {["Meval Cune", "Mectim Spatien", "Amgip Pations", "Beoc Putons","Meval Cune", "Mectim Spatien", "Amgip Pations",].map(
-              (person, i) => (
-                <div
-                  key={i}
-                  className="min-w-[140px] flex-shrink-0 text-center bg-white p-4 rounded-lg shadow-md"
-                >
-                  <img
-                    src={`/assets/user${i + 1}.jpg`}
-                    alt={person}
-                    className="mx-auto w-16 h-16 rounded-full object-cover mb-3"
-                  />
-                  <p className="font-semibold text-sm">{person}</p>
-                  <p className="text-xs text-gray-500">Happy Patient</p>
-                </div>
-              )
-            )}
+            {[
+              "Meval Cune",
+              "Mectim Spatien",
+              "Amgip Pations",
+              "Beoc Putons",
+              "Meval Cune",
+              "Mectim Spatien",
+              "Amgip Pations",
+            ].map((person, i) => (
+              <div
+                key={i}
+                className="min-w-[140px] flex-shrink-0 text-center bg-white p-4 rounded-lg shadow-md"
+              >
+                <img
+                  src={`/assets/user${i + 1}.jpg`}
+                  alt={person}
+                  className="mx-auto w-16 h-16 rounded-full object-cover mb-3"
+                />
+                <p className="font-semibold text-sm">{person}</p>
+                <p className="text-xs text-gray-500">Happy Patient</p>
+              </div>
+            ))}
           </div>
         </div>
       </div>
