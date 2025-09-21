@@ -1,10 +1,17 @@
-import React from 'react'
-import TakeOpinion from './pages/TakeOpinion'
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import TakeOpinionFixed from "./pages/TakeOpinion";
+import DoctorListing from "./pages/DoctorListing";
 
-export default function App() {
+function App() {
   return (
-    <div>
-      <TakeOpinion />
-    </div>
-  )
+    <Router>
+      <Routes>
+        <Route path="/" element={<TakeOpinionFixed />} />
+        <Route path="/doctors" element={<DoctorListing />} />
+      </Routes>
+    </Router>
+  );
 }
+
+export default App;

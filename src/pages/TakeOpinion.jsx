@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const TakeOpinionFixed = () => {
   return (
@@ -58,7 +59,8 @@ const TakeOpinionFixed = () => {
         <header className="flex justify-between items-center px-6 py-4 bg-white shadow-sm">
           <nav className="flex space-x-6 text-sm font-medium">
             <a href="#">Country</a>
-            <a href="#">Doctors</a>
+            <Link to="/doctors">Doctors</Link>
+            
             <a href="#">Hospitals</a>
             <a href="#">Treatments</a>
             <a href="#">Language ▾</a>
