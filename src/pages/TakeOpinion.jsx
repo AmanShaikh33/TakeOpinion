@@ -62,7 +62,7 @@ const TakeOpinionFixed = () => {
             <Link to="/doctors">Doctors</Link>
             
             <a href="#">Hospitals</a>
-            <a href="#">Treatments</a>
+            <Link to="/treatments">Treatments</Link>
             <a href="#">Language ▾</a>
           </nav>
           <button className="px-4 py-2 bg-orange-500 text-white rounded-full hover:bg-orange-600">
